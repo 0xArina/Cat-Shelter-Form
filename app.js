@@ -6,7 +6,7 @@ const list = document.querySelector('#cats');
 // 
 form.addEventListener('submit', function (e) {
 
-    // prevent default action (form doesnt actually submit to new url / stop)
+    // prevent default action (form doesnt actually submit to new url)
     e.preventDefault();
 
     // save entered value of cat name into a var
