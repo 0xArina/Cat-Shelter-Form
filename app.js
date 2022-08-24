@@ -3,7 +3,7 @@ const form = document.querySelector('#shelterForm');
 const input = document.querySelector('#catName');
 const list = document.querySelector('#cats');
 
-// 
+
 form.addEventListener('submit', function (e) {
 
     // prevent default action (form doesnt actually submit to new url)
@@ -20,4 +20,10 @@ form.addEventListener('submit', function (e) {
 
     // clear input
     input.value = '';
+});
+
+// remove cat name from the list on click
+list.addEventListener('click', function (e) {
+    // check if target is li, remove target if it is
+    e.target.nodeName === 'LI' && e.target.remove();
 })
